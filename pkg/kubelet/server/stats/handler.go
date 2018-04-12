@@ -88,6 +88,9 @@ type StatsProvider interface {
 	// GetPodByCgroupfs provides the pod that maps to the specified cgroup literal, as well
 	// as whether the pod was found.
 	GetPodByCgroupfs(cgroupfs string) (*v1.Pod, bool)
+
+	// CPUPoolStats returns CPU pool information from CPU Manager
+	CPUPoolStats() (*statsapi.CPUPoolStats, error)
 }
 
 type handler struct {
