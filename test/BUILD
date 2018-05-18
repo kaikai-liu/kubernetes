@@ -24,6 +24,7 @@ filegroup(
         "//test/soak/serve_hostnames:all-srcs",
         "//test/typecheck:all-srcs",
         "//test/utils:all-srcs",
+        "//test/kubelet:all-srcs",
     ],
     tags = ["automanaged"],
 )
