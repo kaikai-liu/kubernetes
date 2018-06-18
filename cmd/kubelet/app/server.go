@@ -660,6 +660,7 @@ func run(s *options.KubeletServer, kubeDeps *kubelet.Dependencies) (err error) {
 				},
 				ExperimentalQOSReserved:               *experimentalQOSReserved,
 				ExperimentalCPUManagerPolicy:          s.CPUManagerPolicy,
+				ExperimentalCPUManagerPolicyConfig:    s.CPUManagerPolicyConfig,
 				ExperimentalCPUManagerReconcilePeriod: s.CPUManagerReconcilePeriod.Duration,
 				ExperimentalPodPidsLimit:              s.PodPidsLimit,
 				EnforceCPULimits:                      s.CPUCFSQuota,
